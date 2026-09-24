@@ -1,0 +1,74 @@
+export interface EventType {
+  ID: number;
+  CreatedAt: string;
+  UpdatedAt: string;
+  DeletedAt: null | string;
+  name: string;
+  description: string;
+  location: string;
+  image: string;
+  imageId: string;
+  userid: number;
+  user: UserType;
+  datetime: string;
+  listBooking: null;
+  private: boolean;
+  file: string;
+  fileId: string;
+  tagId: number | null;
+  tag: TagType | null;
+  type: string | null;
+  count: number | null;
+  price: number | null;
+}
+
+export interface BookingType {
+  ID: number;
+  CreatedAt: string;
+  UpdatedAt: string;
+  DeletedAt: null | string;
+  bookingCode: string;
+  phone: string;
+  userId: number;
+  user: UserType;
+  eventId: number;
+  event: EventType;
+  count: number | 0;
+}
+
+export interface UserType {
+  ID: number;
+  id: number;
+  CreatedAt: string;
+  UpdatedAt: string;
+  DeletedAt: null | string;
+  name: string;
+  email: string;
+  password: string;
+  role: string;
+  Events: null;
+  image: string;
+}
+
+export interface EventFormData {
+  name?: string;
+  description?: string;
+  image?: string;
+  location?: string;
+  datetime?: string;
+  private?: boolean;
+  file?: string;
+  tagId: number | null;
+}
+
+export interface TagType {
+  ID: number;
+
+  CreatedAt: string;
+
+  UpdatedAt: string;
+
+  DeletedAt: null | string;
+
+  name: string;
+}
