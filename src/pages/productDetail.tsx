@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
@@ -18,6 +19,8 @@ export default function ProductDetail() {
   const [eventData, setEventData] = useState<EventType>();
   const [quantity, setQuantity] = useState(1);
   const navigate = useNavigate()
+
+  console.log(loading, notFound);
 
   const fetchDetailEvent = async () => {
     setLoading(true);
