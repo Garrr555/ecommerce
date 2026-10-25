@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div>
             <h2 className="text-xl font-black">
-              SOLE<span className="text-primary">.</span>
+              PEACE<span className="text-primary">.</span>
             </h2>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-muted-foreground">
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t pt-6 text-sm text-muted-foreground">
-          © 2026 SOLE. All rights reserved.
+          © 2026 PEACE. All rights reserved.
         </div>
       </div>
     </footer>

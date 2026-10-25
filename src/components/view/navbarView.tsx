@@ -34,7 +34,7 @@ export default function NavbarView() {
     <header className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <Link to={"/"} className="text-xl font-black tracking-tight">
-          SOLE<span className="text-primary">.</span>
+          PEACE<span className="text-primary">.</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
